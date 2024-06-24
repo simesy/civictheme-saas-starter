@@ -1,0 +1,23 @@
+uuid: bfeee9e5-94ec-4fa9-ace5-47b968244f44
+langcode: en
+status: true
+dependencies:
+  theme:
+    - seven
+_core:
+  default_config_hash: jx4HSZXArELuQe946AS6daxzPpb_WQX40Idy2qXa0BA
+id: seven_footer_copyright
+theme: seven
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:d7098a8c-3ba3-48f7-bc0c-5787ebaa0427'
+settings:
+  id: 'block_content:d7098a8c-3ba3-48f7-bc0c-5787ebaa0427'
+  label: 'Footer - Copyright'
+  label_display: ''
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

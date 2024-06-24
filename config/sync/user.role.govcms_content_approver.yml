@@ -1,0 +1,29 @@
+uuid: 0d9a0e00-c6a9-4111-a396-6aba1caff1b8
+langcode: en
+status: true
+dependencies:
+  module:
+    - content_moderation
+    - contextual
+    - honeypot
+    - media
+    - node
+    - system
+    - tfa
+    - toolbar
+_core:
+  default_config_hash: QrCdls8s-tUaK4FgCHTnXLCKJK1pOepAJjxs6mx1jcA
+id: govcms_content_approver
+label: 'Content Approver'
+weight: -7
+is_admin: null
+permissions:
+  - 'access contextual links'
+  - 'access toolbar'
+  - 'bypass honeypot protection'
+  - 'setup own tfa'
+  - 'view all media revisions'
+  - 'view all revisions'
+  - 'view any unpublished content'
+  - 'view latest version'
+  - 'view the administration theme'

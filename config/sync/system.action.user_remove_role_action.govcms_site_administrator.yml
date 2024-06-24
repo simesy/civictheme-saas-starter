@@ -1,0 +1,14 @@
+uuid: ce9ba35a-a599-4a07-8707-ceff57d7cbea
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.govcms_site_administrator
+  module:
+    - user
+id: user_remove_role_action.govcms_site_administrator
+label: 'Remove the Site Administrator role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: govcms_site_administrator

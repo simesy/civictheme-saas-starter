@@ -1,0 +1,23 @@
+uuid: 2c53da22-aa6c-4155-af4f-76597a4c12c9
+langcode: en
+status: true
+dependencies:
+  theme:
+    - seven
+_core:
+  default_config_hash: 8l-DRY5EIR-xZyQ1Z0okHwX-nIpc-myf1-tg9XLXQaw
+id: seven_footer_social_links
+theme: seven
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:5c0ad15f-3e9c-4eeb-8525-7a064b06fc58'
+settings:
+  id: 'block_content:5c0ad15f-3e9c-4eeb-8525-7a064b06fc58'
+  label: 'Social links'
+  label_display: ''
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

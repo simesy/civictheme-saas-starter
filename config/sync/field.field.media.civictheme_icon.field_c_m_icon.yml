@@ -1,0 +1,29 @@
+uuid: f6f96200-9702-4ad1-a76b-464a6e4d9ffd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_c_m_icon
+    - media.type.civictheme_icon
+  module:
+    - file
+_core:
+  default_config_hash: jQbLSMuZqHr1-ws-lOT9OEMtkNUSqbCo__E-rehrKeA
+id: media.civictheme_icon.field_c_m_icon
+field_name: field_c_m_icon
+entity_type: media
+bundle: civictheme_icon
+label: File
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: icons
+  file_extensions: svg
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

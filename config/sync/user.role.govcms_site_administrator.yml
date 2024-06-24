@@ -1,0 +1,101 @@
+uuid: 337fcb19-8bd5-4a3a-a695-2da113713a2d
+langcode: en
+status: true
+dependencies:
+  module:
+    - block
+    - block_content
+    - content_moderation
+    - contextual
+    - field_ui
+    - file
+    - filter
+    - honeypot
+    - image
+    - layout_builder
+    - media
+    - media_file_delete
+    - node
+    - path
+    - securitytxt
+    - shortcut
+    - system
+    - taxonomy
+    - tfa
+    - toolbar
+    - views_ui
+_core:
+  default_config_hash: Q8uZL6-I4G3sj6m5qxeeCrv8ypNQ0DJGFXuNVu7FNDM
+id: govcms_site_administrator
+label: 'Site Administrator'
+weight: -6
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access files overview'
+  - 'access media overview'
+  - 'access shortcuts'
+  - 'access site in maintenance mode'
+  - 'access taxonomy overview'
+  - 'access toolbar'
+  - 'access user profiles'
+  - 'administer account settings'
+  - 'administer block_content display'
+  - 'administer block_content fields'
+  - 'administer block_content form display'
+  - 'administer blocks'
+  - 'administer content types'
+  - 'administer display modes'
+  - 'administer filters'
+  - 'administer honeypot'
+  - 'administer image styles'
+  - 'administer media'
+  - 'administer media display'
+  - 'administer media fields'
+  - 'administer media file delete'
+  - 'administer media form display'
+  - 'administer media types'
+  - 'administer menu'
+  - 'administer node display'
+  - 'administer node fields'
+  - 'administer node form display'
+  - 'administer nodes'
+  - 'administer securitytxt'
+  - 'administer shortcuts'
+  - 'administer taxonomy'
+  - 'administer taxonomy_term display'
+  - 'administer taxonomy_term fields'
+  - 'administer taxonomy_term form display'
+  - 'administer themes'
+  - 'administer url aliases'
+  - 'administer user display'
+  - 'administer user fields'
+  - 'administer user form display'
+  - 'administer users'
+  - 'administer views'
+  - 'bypass honeypot protection'
+  - 'bypass node access'
+  - 'configure any layout'
+  - 'create and edit custom blocks'
+  - 'create media'
+  - 'create url aliases'
+  - 'customize shortcut links'
+  - 'delete all revisions'
+  - 'delete any media'
+  - 'delete media'
+  - 'link to any page'
+  - 'revert all revisions'
+  - 'select account cancellation method'
+  - 'setup own tfa'
+  - 'switch shortcut sets'
+  - 'update any media'
+  - 'update media'
+  - 'view all media revisions'
+  - 'view all revisions'
+  - 'view any unpublished content'
+  - 'view latest version'
+  - 'view own unpublished content'
+  - 'view own unpublished media'
+  - 'view the administration theme'

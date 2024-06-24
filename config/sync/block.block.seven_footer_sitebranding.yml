@@ -1,0 +1,25 @@
+uuid: 32576cd4-8cf6-4fb6-9d9b-d5c182067792
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - seven
+_core:
+  default_config_hash: JsxXX1yr2lrenxigULjJmgP88YKVxKnsaKSMSdhBqo8
+id: seven_footer_sitebranding
+theme: seven
+region: header
+weight: -7
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Footer site branding - logo'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

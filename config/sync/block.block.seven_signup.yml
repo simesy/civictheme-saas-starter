@@ -1,0 +1,23 @@
+uuid: d94266df-2a21-4c55-bf32-8ba16b34383b
+langcode: en
+status: true
+dependencies:
+  theme:
+    - seven
+_core:
+  default_config_hash: e3ppKBrX3gckzRPyYre3BqxDzzJfH9mr_BjMre0QmIA
+id: seven_signup
+theme: seven
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:5508dc51-1cf8-4577-9038-b572fbd698ae'
+settings:
+  id: 'block_content:5508dc51-1cf8-4577-9038-b572fbd698ae'
+  label: Signup
+  label_display: ''
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

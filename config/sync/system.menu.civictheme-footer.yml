@@ -1,0 +1,10 @@
+uuid: 8edccf61-208f-45ce-b660-5fec7396aeba
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: SyfOhsPKWsRIIfsYxcorrJacePrx9cg2eTgEEwsYgK4
+id: civictheme-footer
+label: Footer
+description: 'Footer menu provided by CivicTheme.'
+locked: false

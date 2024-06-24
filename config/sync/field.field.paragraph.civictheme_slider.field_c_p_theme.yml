@@ -1,0 +1,25 @@
+uuid: 98929919-a6b1-4833-827f-56ba63b6ec4f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_c_p_theme
+    - paragraphs.paragraphs_type.civictheme_slider
+  module:
+    - options
+_core:
+  default_config_hash: TQ9g2g-_TsdHKS3U7EgUolRAS1IWsJf2wqxDyJGMIzQ
+id: paragraph.civictheme_slider.field_c_p_theme
+field_name: field_c_p_theme
+entity_type: paragraph
+bundle: civictheme_slider
+label: Theme
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: light
+default_value_callback: ''
+settings: {  }
+field_type: list_string

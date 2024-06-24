@@ -1,0 +1,13 @@
+uuid: 12e83d68-0913-48c4-a828-52224041c6af
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: 0hmUTNmjqXLeknoCycypBIaXc-5H13FbWNoEMQ9HVuQ
+id: node.civictheme_snippet
+label: Snippet
+description: ''
+targetEntityType: node
+cache: true

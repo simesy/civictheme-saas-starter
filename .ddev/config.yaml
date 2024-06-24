@@ -1,0 +1,8 @@
+name: civictheme
+type: drupal10
+docroot: web
+php_version: "8.1"
+webserver_type: nginx-fpm
+disable_settings_management: true # @see web/sites/default/docker.settings.php
+web_environment:
+- DRUSH_OPTIONS_URI=https://civictheme.ddev.site

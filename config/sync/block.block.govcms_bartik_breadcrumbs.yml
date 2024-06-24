@@ -1,0 +1,22 @@
+uuid: c3ea4152-f23f-4bfb-b812-6d51b7325050
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - govcms_bartik
+_core:
+  default_config_hash: IaV-GUjZIOCgOblkC8T4RA76NpKD6Y3v2YBhSSAS1Yg
+id: govcms_bartik_breadcrumbs
+theme: govcms_bartik
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

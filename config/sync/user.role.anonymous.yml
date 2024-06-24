@@ -1,0 +1,18 @@
+uuid: d6939b3c-6d9d-44b6-8bcb-c7aeb92065b4
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - securitytxt
+    - system
+_core:
+  default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
+id: anonymous
+label: 'Anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access content'
+  - 'view media'
+  - 'view securitytxt'

@@ -1,0 +1,10 @@
+uuid: 1db83e38-f044-478c-9155-f9cc02dac137
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: AwkXxgcBc5OhqATt_RTLZJRsmJX26WZzzkubRcaF5mk
+id: civictheme_short_date
+label: 'CivicTheme Short Date'
+locked: false
+pattern: 'j M Y'

@@ -1,0 +1,23 @@
+uuid: 3011bce0-d225-4dfe-a1e7-4df9c9e13cd0
+langcode: en
+status: true
+dependencies:
+  theme:
+    - seven
+_core:
+  default_config_hash: 8t9aVoKvxCIo2T0bQvxwOMjyEw0MnWBRdbN7Vd9u_y8
+id: seven_footer_acknowledgment_of_country
+theme: seven
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:7cf65f98-cbae-4e9d-b6ea-7d6d1c437c1c'
+settings:
+  id: 'block_content:7cf65f98-cbae-4e9d-b6ea-7d6d1c437c1c'
+  label: 'Footer - Acknowledgment of country'
+  label_display: ''
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

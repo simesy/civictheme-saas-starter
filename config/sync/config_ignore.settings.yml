@@ -1,0 +1,11 @@
+_core:
+  default_config_hash: oPQBWmG8C9fum1XPbE5BAD1Cj9fMIVHetIIHg3cQ7_g
+mode: simple
+ignored_config_entities:
+  - clamav.settings
+  - login_security.settings
+  - 'password_policy.*'
+  - seckit.settings
+  - 'system.menu.*'
+  - 'webform.webform.*'
+  - 'webform.webform_options.*'

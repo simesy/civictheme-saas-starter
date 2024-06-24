@@ -1,0 +1,25 @@
+uuid: 25a2b306-02d0-4c4e-b2db-a5753ecafa7a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:civictheme_component_block:5508dc51-1cf8-4577-9038-b572fbd698ae'
+  module:
+    - block_content
+  theme:
+    - civictheme
+id: civictheme_signup
+theme: civictheme
+region: content_bottom
+weight: 0
+provider: null
+plugin: 'block_content:5508dc51-1cf8-4577-9038-b572fbd698ae'
+settings:
+  id: 'block_content:5508dc51-1cf8-4577-9038-b572fbd698ae'
+  label: Signup
+  label_display: ''
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

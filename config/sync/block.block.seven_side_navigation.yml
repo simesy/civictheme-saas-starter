@@ -1,0 +1,40 @@
+uuid: 7552cf14-2fd8-4983-878f-a7f6004260d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.civictheme-primary-navigation
+  module:
+    - menu_block
+    - system
+  theme:
+    - seven
+_core:
+  default_config_hash: QcJ_W7IkKbV5Ww19-yOQP3aYXurwe8ZiKGcWBbLc-2I
+id: seven_side_navigation
+theme: seven
+region: header
+weight: 0
+provider: null
+plugin: 'menu_block:civictheme-primary-navigation'
+settings:
+  id: 'menu_block:civictheme-primary-navigation'
+  label: 'Side Navigation'
+  label_display: ''
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 3
+  expand_all_items: false
+  parent: 'civictheme-primary-navigation:'
+  render_parent: false
+  suggestion: civictheme_primary_navigation
+  hide_on_nonactive: false
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: /search

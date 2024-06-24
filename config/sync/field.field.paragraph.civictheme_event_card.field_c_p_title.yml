@@ -1,0 +1,21 @@
+uuid: a0d70bc1-5f66-4dad-87b1-ad6f2dbb82a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_c_p_title
+    - paragraphs.paragraphs_type.civictheme_event_card
+_core:
+  default_config_hash: CNQldxQ79zwokDleB1yc46baKF2G11diT_M6MjknCNU
+id: paragraph.civictheme_event_card.field_c_p_title
+field_name: field_c_p_title
+entity_type: paragraph
+bundle: civictheme_event_card
+label: Title
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

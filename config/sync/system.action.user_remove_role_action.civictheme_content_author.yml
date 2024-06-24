@@ -1,0 +1,14 @@
+uuid: 73dfa13b-7980-44fb-9773-98682914e21d
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.civictheme_content_author
+  module:
+    - user
+id: user_remove_role_action.civictheme_content_author
+label: 'Remove the Content Author role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: civictheme_content_author

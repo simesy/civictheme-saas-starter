@@ -1,0 +1,100 @@
+#ddev-generated
+
+http:
+  routers:
+    
+    
+    ndda-web-80-http:
+      
+      rule: HostRegexp(`ndda.ddev.site`)
+      
+      middlewares:
+        - autodetect
+      service: "ndda-web-80-http"
+      tls: false
+      entrypoints:
+        - http-8080
+    
+    
+    ndda-web-8025-http:
+      
+      rule: HostRegexp(`ndda.ddev.site`)
+      
+      middlewares:
+        - autodetect
+      service: "ndda-web-8025-http"
+      tls: false
+      entrypoints:
+        - http-8025
+    
+    
+    
+    
+    
+    
+    ndda-web-80-https:
+      
+      rule: HostRegexp(`ndda.ddev.site`)
+      
+      middlewares:
+        - autodetect
+      service: "ndda-web-80-https"
+      
+      tls: true
+      
+      entrypoints:
+        - http-8443
+    
+    
+    ndda-web-8025-https:
+      
+      rule: HostRegexp(`ndda.ddev.site`)
+      
+      middlewares:
+        - autodetect
+      service: "ndda-web-8025-https"
+      
+      tls: true
+      
+      entrypoints:
+        - http-8026
+    
+    
+
+  # autodetect won't be needed in Traefik 3 https://github.com/traefik/traefik/pull/9546
+  middlewares:
+    autodetect:
+      contentType:
+        autoDetect: false
+
+  services:
+    
+    ndda-web-80-http:
+      loadbalancer:
+        servers:
+          - url: http://ddev-ndda-web:80
+    
+    ndda-web-8025-http:
+      loadbalancer:
+        servers:
+          - url: http://ddev-ndda-web:8025
+    
+    ndda-web-80-https:
+    
+      loadbalancer:
+        servers:
+          - url: http://ddev-ndda-web:80
+    
+    ndda-web-8025-https:
+    
+      loadbalancer:
+        servers:
+          - url: http://ddev-ndda-web:8025
+    
+
+
+tls:
+  certificates:
+    - certFile: /mnt/ddev-global-cache/traefik/certs/ndda.crt
+      keyFile: /mnt/ddev-global-cache/traefik/certs/ndda.key
+

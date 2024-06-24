@@ -1,0 +1,48 @@
+uuid: febd608d-279f-471a-a9a4-77df84b1e762
+langcode: en
+status: true
+dependencies:
+  module:
+    - content_moderation
+    - contextual
+    - file
+    - honeypot
+    - media
+    - node
+    - path
+    - shortcut
+    - system
+    - tfa
+    - toolbar
+_core:
+  default_config_hash: '-ncM5EhWOuaGHLAd04QFb25g6tsgVWPK8KdvWlSCC9Y'
+id: govcms_content_author
+label: 'Content Author'
+weight: -8
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access files overview'
+  - 'access media overview'
+  - 'access shortcuts'
+  - 'access toolbar'
+  - 'administer media'
+  - 'administer url aliases'
+  - 'bypass honeypot protection'
+  - 'create media'
+  - 'create url aliases'
+  - 'delete all revisions'
+  - 'delete any media'
+  - 'delete media'
+  - 'revert all revisions'
+  - 'setup own tfa'
+  - 'update any media'
+  - 'update media'
+  - 'view all media revisions'
+  - 'view all revisions'
+  - 'view any unpublished content'
+  - 'view latest version'
+  - 'view own unpublished content'
+  - 'view own unpublished media'
+  - 'view the administration theme'

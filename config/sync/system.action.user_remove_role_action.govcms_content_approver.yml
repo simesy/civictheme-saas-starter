@@ -1,0 +1,14 @@
+uuid: 7583f1b4-befc-49dd-b258-cac14a61d082
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.govcms_content_approver
+  module:
+    - user
+id: user_remove_role_action.govcms_content_approver
+label: 'Remove the Content Approver role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: govcms_content_approver

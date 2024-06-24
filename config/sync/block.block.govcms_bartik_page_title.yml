@@ -1,0 +1,20 @@
+uuid: 39a256c6-4223-41dc-855d-5477f84ea961
+langcode: en
+status: true
+dependencies:
+  theme:
+    - govcms_bartik
+_core:
+  default_config_hash: L-Ioc8-et-hPxHNMUAyPnHXMwRT8OdGAHiFcX_eUcg0
+id: govcms_bartik_page_title
+theme: govcms_bartik
+region: content
+weight: 0
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

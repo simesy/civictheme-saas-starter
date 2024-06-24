@@ -1,0 +1,23 @@
+uuid: 82a131f6-690e-458d-b89f-6d4deb9a6d4e
+langcode: en
+status: true
+dependencies:
+  theme:
+    - seven
+_core:
+  default_config_hash: npGPUmgSI6lc4QFMQM-JZBo3HGq-kuXlQMnZ2Wqvt2M
+id: seven_mobile_navigation
+theme: seven
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:b7f36176-620f-4178-aadd-9b448c610986'
+settings:
+  id: 'block_content:b7f36176-620f-4178-aadd-9b448c610986'
+  label: 'Mobile Navigation'
+  label_display: ''
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
