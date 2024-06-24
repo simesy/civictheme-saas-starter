@@ -37,7 +37,9 @@ SaaS project, and then import the database. So:
 
 ## How to build a new site that is vanilla govcms with civictheme.
 
-First update the composer.json to get the right versions you want, then:
+First update the composer.json to get the right versions you want, then
+follow these steps that again are just a basic version of
+[these docs](https://docs.civictheme.io/development/drupal-theme/using-in-govcms-saas).
 
 ```
 # Get a vanilla govcms saas.
@@ -65,8 +67,8 @@ ddev drush pm-uninstall -y civictheme_govcms
 ddev drush cex -y
 ```
 
-The only thing left is install some content. Log into the site, go to 
-CivicTheme settings, and find the provision content section. There's 
-probably an easier way with drush.
+To finish up
 
-Export the database and zip it. I usually truncate the cache tables etc.
+1. log into the site, go to /admin/appearance/settings/civictheme
+2. Scroll to CIVICTHEME CONTENT PROVISION, and run that.
+3. Then export the database and zip it. (I usually truncate the cache tables etc for a bit smaller zip.)
