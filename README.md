@@ -4,7 +4,7 @@ This just gives you a vanilla GovCMS with Civictheme that you would get if you f
 [these instructions](https://docs.civictheme.io/development/drupal-theme/using-in-govcms-saas).
 
 This is valid as of CivicTheme 1.7.1 and I'll update it whenever i work
-on CivicTheme.
+on a SaaS site that needs CivicTheme.
 
 ## Warning
 
@@ -16,7 +16,7 @@ If you want to see what a basic civictheme looks like, so many you
 want to check out the blocks etc. Something like:
 
 ```
-git clone git@github.com:simesy/civictheme-vanilla.git
+git clone git@github.com:simesy/civictheme-saas-starter.git
 cd civictheme-vanilla
 ddev start
 ddev composer install
