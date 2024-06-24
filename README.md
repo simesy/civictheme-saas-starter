@@ -63,7 +63,7 @@ ddev en -y civictheme_govcms
 ddev drush civictheme_govcms:remove-config --preserve=user_roles
 ddev drush pm-uninstall -y civictheme_govcms
 
-# Export the default config.
+# Capture the config.
 ddev drush cex -y
 ```
 
