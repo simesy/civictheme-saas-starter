@@ -20,11 +20,9 @@ git clone git@github.com:simesy/civictheme-saas-starter.git
 cd civictheme-saas-starter
 ddev start
 ddev composer install
-ddev import-db --file=baseline.sql.gz
+ddev import-db --file=baseline-with-blocks.sql.gz
 ddev drush cr
 ddev drush uli
-
-# See "Resolving errors" below.
 ```
 
 ### Migrating this to a SaaS project.
@@ -69,7 +67,7 @@ ddev drush pm-uninstall -y civictheme_govcms
 # At this point you have a baseline, this is where you need to start for any
 # of the content examples below. Note that the baseline is partly broken with
 
-# Export the baseline is desires.
+# Export the baseline if desired.
 ddev drush sql:dump --gzip > baseline.sql.gz
 git add . && git ci # etc
 ```
@@ -83,13 +81,19 @@ steps resolve the "This block is broken or missing" errors.
 1. log into the site, go to /admin/appearance/settings/civictheme
 2. Scroll to CIVICTHEME CONTENT PROVISION, and run that thing. 
 
+```
+# Export the baseline-with-blocks if desired.
+ddev drush sql:dump --gzip > baseline-with-blocks.sql.gz
+git add . && git ci # etc
+```
+
 ## Demos
 
 The client may have seen govcms in different setups and expecting these to be replicated.
 These are listed at https://www.civictheme.io/civictheme-showcase#sample-template-sites
 
 So these instructions allow you to create the following demos from the civictheme_content
-module.
+module. Note you have to start with baseline.sql.gz (not the one with blocks).
 
 ```
 ddev import-db --file=baseline.sql.gz
