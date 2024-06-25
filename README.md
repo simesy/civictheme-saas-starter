@@ -39,7 +39,7 @@ to get to started with this database.
 
 ## Demos
 
-If you've run the above sus
+If you've managed to install the baseline version, you're ready to install the demos.
 
 The client may have seen govcms in different setups and expecting these to be replicated.
 These are listed at https://www.civictheme.io/civictheme-showcase#sample-template-sites
