@@ -65,7 +65,7 @@ ddev drush civictheme_govcms:remove-config --preserve=user_roles
 ddev drush pm-uninstall -y civictheme_govcms
 
 # At this point you have a baseline, this is where you need to start for any
-# of the content examples below. Note that the baseline is partly broken with
+# of the content examples below.
 
 # Export the baseline if desired.
 ddev drush sql:dump --gzip > baseline.sql.gz
