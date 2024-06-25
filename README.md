@@ -50,7 +50,7 @@ ddev drush si govcms
 ddev drush ev "require 'themes/custom/civictheme/theme-settings.provision.inc'; civictheme_enable_modules();"
 ddev drush cr
 
-# Enable and set civictheme.
+# Enable and set civictheme. Ignore errors about missing blocks.
 ddev drush theme:enable -y civictheme
 ddev drush config-set -y media.settings standalone_url true
 
@@ -71,12 +71,12 @@ ddev drush pm-uninstall -y civictheme_govcms
 
 ### Resolve errors
 
-This does an ultra-minimal block setup, like the logo in the header.
-This resolves "This block is broken or missing" errors.
+Those instructions avoce will result in an ultra-minimal setup that is perfect for
+installing demos on top of. However for preparing to build a fresh site, these
+steps resolve the "This block is broken or missing" errors.
 
 1. log into the site, go to /admin/appearance/settings/civictheme
 2. Scroll to CIVICTHEME CONTENT PROVISION, and run that thing. 
-
 
 ## Demos
 
