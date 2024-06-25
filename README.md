@@ -106,5 +106,5 @@ If you want to use any of these on installs onGovCMS SaaS, you must remove
 modules not in GovCMS before you export the database.
 
 ```
-ddev pmu civictheme_content default_content -y
+ddev drush pmu civictheme_content default_content -y
 ```
