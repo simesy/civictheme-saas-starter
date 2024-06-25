@@ -20,7 +20,7 @@ git clone git@github.com:simesy/civictheme-saas-starter.git
 cd civictheme-vanilla
 ddev start
 ddev composer install
-ddev import-db --file=starter-civictheme.sql.gz
+ddev import-db --file=snapshots/baseline.sql.gz
 ddev drush cr
 ddev drush uli
 ```
@@ -59,13 +59,54 @@ ddev drush theme:enable -y adminimal_theme
 ddev drush config-set -y system.theme admin adminimal_theme
 
 # Remove govcms content model. Don't forget to uninstall this helper module.
-ddev en -y civictheme_govcms
+ddev drush en -y civictheme_govcms
 ddev drush civictheme_govcms:remove-config --preserve=user_roles
 ddev drush pm-uninstall -y civictheme_govcms
 
-# Capture the config.
-ddev drush cex -y
+# At this point you have a baseline, this is where you need to start for any
+# of the content examples below.
+# @see snapshots/baseline.sql.gz
 ```
+
+## Demonstrating difference styles
+
+The client may have seen govcms in different setups and expecting these to be replicated.
+These are listed at https://www.civictheme.io/civictheme-showcase#sample-template-sites
+
+So these instructions allow me to create the following demos from the above 
+`snapshots/baseline.sql.gz`.
+
+* https://government.civictheme.io/
+* https://corporate.civictheme.io/
+* https://higher-education-university.civictheme.io/
+
+### 1. Minimal 
+
+This does a minimal block setup, like the logo.
+
+1. log into the site, go to /admin/appearance/settings/civictheme
+2. Scroll to CIVICTHEME CONTENT PROVISION, and run that thing. 
+
+### 2. Government
+
+This does a minimal block setup.
+
+
+```
+ddev drush si civictheme_content -y
+```
+
+### 3. Corporate
+
+```
+ddev drush si civictheme_content -y
+```
+
+### 4. 
+
+
+
+Terhe
 
 To finish up
 
