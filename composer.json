@@ -6,7 +6,8 @@
     "repositories": [
         { "type": "composer", "url": "https://packages.drupal.org/8" },
         { "type": "composer", "url": "https://asset-packagist.org" },
-        { "type": "vcs", "url": "git@github.com:govcms/govcms.git" }
+        { "type": "vcs", "url": "git@github.com:govcms/govcms.git" },
+        { "type": "vcs", "url": "git@github.com:civictheme/civictheme_content.git" }
     ],
     "require": {
         "php": "^8.1",
@@ -18,6 +19,7 @@
         "govcms/scaffold-tooling": "10.x-master-dev"
     },  
     "require-dev": {
+        "civictheme/civictheme_content": "^1.7",
         "drupal/profile_switcher": "^1.0@alpha",
         "salsadigitalauorg/civictheme_govcms": "^1.6"
     },
