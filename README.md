@@ -25,6 +25,8 @@ ddev drush cr
 ddev drush uli
 ```
 
+At this point you can move to **Demos**.
+
 ### Migrating this to a SaaS project.
 
 So you might have a SaaS project from GovCMS Gitlab, and you want 
@@ -35,7 +37,42 @@ to get to started with this database.
 3. Import the database dump `baseline-with-blocks.sql.gz` (ie. using the Ahoy import database command)
 4. If desired, export the config (ie. using the Ahoy Drush command)
 
+## Demos
+
+If you've run the above sus
+
+The client may have seen govcms in different setups and expecting these to be replicated.
+These are listed at https://www.civictheme.io/civictheme-showcase#sample-template-sites
+
+So these instructions allow you to create the following demos from the civictheme_content
+module. Note you have to start with baseline.sql.gz (not the one with blocks).
+
+```
+ddev import-db --file=baseline.sql.gz
+ddev exec "CIVICTHEME_CONTENT_PROFILE=default drush en civictheme_content -y"
+
+ddev import-db --file=baseline.sql.gz
+ddev exec "CIVICTHEME_CONTENT_PROFILE=government drush en civictheme_content -y"
+
+ddev import-db --file=baseline.sql.gz
+ddev exec "CIVICTHEME_CONTENT_PROFILE=highereducation drush en civictheme_content -y"
+
+ddev import-db --file=baseline.sql.gz
+ddev exec "CIVICTHEME_CONTENT_PROFILE=corporate drush en civictheme_content -y"
+```
+
+## Using demos in SaaS
+
+If you want to use any of these on installs onGovCMS SaaS, you must remove
+modules not in GovCMS before you export the database.
+
+```
+ddev drush pmu civictheme_content default_content -y
+```
+
 ## How was baseline.sql.gz created?
+
+This is all just my notes for building the sql.gz files.
 
 First update the composer.json to get the right versions you want of GovCMS
 and CivicTheme. Then follow these steps which are a basic version of
@@ -85,35 +122,4 @@ steps resolve the "This block is broken or missing" errors.
 # Export the baseline-with-blocks if desired.
 ddev drush sql:dump --gzip > baseline-with-blocks.sql.gz
 git add . && git ci # etc
-```
-
-## Demos
-
-The client may have seen govcms in different setups and expecting these to be replicated.
-These are listed at https://www.civictheme.io/civictheme-showcase#sample-template-sites
-
-So these instructions allow you to create the following demos from the civictheme_content
-module. Note you have to start with baseline.sql.gz (not the one with blocks).
-
-```
-ddev import-db --file=baseline.sql.gz
-ddev exec "CIVICTHEME_CONTENT_PROFILE=default drush en civictheme_content -y"
-
-ddev import-db --file=baseline.sql.gz
-ddev exec "CIVICTHEME_CONTENT_PROFILE=government drush en civictheme_content -y"
-
-ddev import-db --file=baseline.sql.gz
-ddev exec "CIVICTHEME_CONTENT_PROFILE=highereducation drush en civictheme_content -y"
-
-ddev import-db --file=baseline.sql.gz
-ddev exec "CIVICTHEME_CONTENT_PROFILE=corporate drush en civictheme_content -y"
-```
-
-## Using demos in SaaS
-
-If you want to use any of these on installs onGovCMS SaaS, you must remove
-modules not in GovCMS before you export the database.
-
-```
-ddev drush pmu civictheme_content default_content -y
 ```
